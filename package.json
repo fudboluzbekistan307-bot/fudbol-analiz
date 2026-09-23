@@ -1,0 +1,17 @@
+{
+  "name": "fudbol-analiz",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Futbol o'yinlari tahlil platformasi — web + Telegram bot + live",
+  "type": "module",
+  "packageManager": "pnpm@10.28.0",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "dev": "pnpm -r --parallel --filter @fa/api --filter @fa/web dev",
+    "dev:api": "pnpm --filter @fa/api dev",
+    "dev:web": "pnpm --filter @fa/web dev",
+    "build": "pnpm --filter @fa/web build",
+    "start": "pnpm --filter @fa/api start",
+    "test": "pnpm --filter @fa/core test"
+  }
+}
